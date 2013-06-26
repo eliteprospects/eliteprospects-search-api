@@ -21,15 +21,14 @@ __Player Response__
 	position: "F",
 	age: "1973"
 }
-```
-
-id => unique player on in eliteprospects.com  
-fullname => name of the player  
-matches => array containing what characters in the fullname that matches the query. Note: [0,7] should be read from 0 to 7 meaning character 0,1,2,3,4,5,6 (don't include the last number). Useful if you want to highlight searches.  
+```  
+__id__ => unique player on in eliteprospects.com  
+__fullname__ => name of the player  
+__matches__ => array containing what characters in the fullname that matches the query. Note: [0,7] should be read from 0 to 7 meaning character 0,1,2,3,4,5,6 (don't include the last number). Useful if you want to highlight searches.  
   
-country => player nationality (see list of countries)  
-position => player position. F = Forward, D = Defenceman, G = Goaltender  
-age => what year the player was born (yes we know, it's a confusing parameter name)  
+__country__ => player nationality (see list of countries)  
+__position__ => player position. F = Forward, D = Defenceman, G = Goaltender  
+__age__ => what year the player was born (yes we know, it's a confusing parameter name)  
 
 
 ### Team Search
@@ -39,7 +38,7 @@ Returns a list of 20 teams that best matches the search query.
 GET http://api.eliteprospects.com/v1/teams?q=[search query]
 ```
 
-__Team Response__
+__Team Response__  
 ```javascript
 {
 	id: "8",
@@ -49,12 +48,11 @@ __Team Response__
 	],
 	country: "1"
 }
-```
-
-id => unique team id on eliteprospects.com  
-fullteam => name of the team  
-matches => array containing what characters in the fullname that matches the query. Note: [0,4] should be read from 0 to 4 meaning character 0,1,2,3,4 (don't include the last number). Useful if you want to highlight searches.  
-country => team nationality (see list of countries)  
+```  
+__id__ => unique team id on eliteprospects.com  
+__fullteam__ => name of the team  
+__matches__ => array containing what characters in the fullname that matches the query. Note: [0,4] should be read from 0 to 4 meaning character 0,1,2,3,4 (don't include the last number). Useful if you want to highlight searches.  
+__country__ => team nationality (see list of countries)  
 
 ### Link to eliteprospects.com
 If you want to link the result back to eliteprospects.com you can build your urls as the examples below.
