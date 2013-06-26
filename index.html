@@ -91,6 +91,7 @@
         $.getJSON(endpoint + "/players", { q: request.term }, response);
       },      
       minLength: 2,
+      delay: 100,
       select: function( event, ui ) {
         log( ui.item ?
           ui.item.fullname + ": " + getPlayerURI(ui.item.id):
@@ -113,6 +114,7 @@
         $.getJSON(endpoint + "/teams", { q: request.term }, response);
       },      
       minLength: 2,
+      delay: 100,
       select: function( event, ui ) {
         log( ui.item ?
           ui.item.fullteam + ": " + getTeamURI(ui.item.id):
