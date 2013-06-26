@@ -2,6 +2,8 @@
 
 This is the official documentation for how to search players and teams from Eliteprospects.com. This is an early (non-final) version of the Eliteprospects API and formats and syntax may change. If you are using the API please let us know so we can give you notices regarding any changes.
 
+See example usage on http://menmo.github.io/eliteprospects-search-api and source code https://github.com/menmo/eliteprospects-search-api/blob/gh-pages/index.html.
+
 ### Player Search
 Returns a list of 20 players that best meets the search query.
 
